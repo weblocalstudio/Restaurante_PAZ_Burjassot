@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Bol Vacío | Ramen La Paz</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos de emergencia para que nunca se vea bugueado */
+        :root {
+            --rojo: #bc002d;
+            --negro: #0a0a0a;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--negro);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .navbar-error {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .error-container {
+            padding: 20px;
+        }
+        .error-code {
+            font-size: clamp(5rem, 15vw, 10rem);
+            font-weight: 700;
+            color: var(--rojo);
+            margin: 0;
+            line-height: 1;
+        }
+        h2 {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 1.8rem;
+            margin: 10px 0;
+        }
+        p {
+            color: #888;
+            max-width: 400px;
+            margin: 0 auto 30px;
+        }
+        .btn-home {
+            background-color: var(--rojo);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn-home:hover {
+            transform: scale(1.05);
+            background-color: #e60039;
+        }
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar-error">
+        <div style="font-family: 'Noto Serif JP'; font-size: 1.2rem; font-weight: bold;">
+            RAMEN <span style="color: var(--rojo);">LA PAZ</span>
+        </div>
+    </div>
+
+    <main class="error-container">
+        <div class="icon">🍜</div>
+        <h1 class="error-code">404</h1>
+        <h2>BOL VACÍO</h2>
+        <p>Parece que has llegado a un callejón sin salida. No te preocupes, el camino al mejor Ramen está por aquí:</p>
+        <a href="/" class="btn-home">VOLVER AL INICIO</a>
+    </main>
+
+</body>
+</html>
